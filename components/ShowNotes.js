@@ -50,7 +50,7 @@ export default function ShowNotes({ show, setCurrentPlaying }) {
       </a>
       <a
         className="button"
-        href={`https://github.com/meese-enterprises/guysinpants.com/edit/master/shows/${show.notesFile}`}
+        href={`https://github.com/ajmeese7/guysinpants.com/edit/master/shows/${show.notesFile}`}
         target="_blank"
         rel="noopener noreferrer"
       >

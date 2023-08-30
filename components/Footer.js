@@ -18,7 +18,7 @@ const Footer = () => (
     <p>
       Source on{" "}
       <a
-        href="https://github.com/meese-enterprises/guysinpants.com"
+        href="https://github.com/ajmeese7/guysinpants.com"
         target="_blank"
         rel="noopener noreferrer"
       >
