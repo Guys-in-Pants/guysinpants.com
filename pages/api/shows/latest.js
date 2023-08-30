@@ -1,10 +1,10 @@
-import Cors from 'cors';
-import { getShows } from '../../../lib/getShows';
-import initMiddleware from '../../../lib/initMiddleware';
+import Cors from "cors";
+import { getShows } from "../../../lib/getShows";
+import initMiddleware from "../../../lib/initMiddleware";
 
 const cors = initMiddleware(
   Cors({
-    methods: ['GET', 'OPTIONS'],
+    methods: ["GET", "OPTIONS"],
   })
 );
 
@@ -18,6 +18,6 @@ export default async function latest(req, res) {
     return;
   }
   res.status(404).json({
-    message: `Sorry not found. Out of all the ${shows.length} shows, we didn't find this one.`,
+    message: `Sorry, not found. Out of all the ${shows.length} shows, we didn't find this one.`,
   });
 }

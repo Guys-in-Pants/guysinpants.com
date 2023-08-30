@@ -1,13 +1,11 @@
-import Link from 'next/link';
-import Subscribe from './Subscribe';
+import Link from "next/link";
+import Subscribe from "./Subscribe";
 
 const Header = () => (
   <header className="header">
     <div className="header__left">
-      <Link href="/">
-        <a aria-label="Syntax.FM">
-          <img className="header__logo" src="/static/logo.png" alt="Syntax" />
-        </a>
+      <Link href="/" aria-label="Guys in pants">
+        <img className="header__logo" src="/static/logo.png" alt="Guys in Pants logo" />
       </Link>
     </div>
     <div className="header__right">
@@ -26,20 +24,20 @@ const Header = () => (
         <div className="person">
           <img
             src="https://avatars.githubusercontent.com/wesbos?size=200"
-            alt="Wes Bos"
+            alt="Aaron Meese"
             className="avatar"
           />
-          <h3>Wes Bos</h3>
+          <h3>Aaron Meese</h3>
           <a
             target="_blank"
-            href="https://twitter.com/wesbos"
+            href="https://twitter.com/ajmeese7"
             className="person__social person__social--twitter"
             rel="noopener noreferrer"
           >
-            @wesbos
+            @ajmeese7
           </a>
           <p>
-            Full Stack JavaScript Developer. Creator of really good{' '}
+            Full Stack JavaScript Developer. Creator of really good{" "}
             <a
               target="_blank"
               href="https://wesbos.com/courses"
@@ -54,10 +52,10 @@ const Header = () => (
         <div className="person">
           <img
             src="https://avatars.githubusercontent.com/stolinski?size=200"
-            alt="Scott Tolinski"
+            alt="Roy Buddie Holley"
             className="avatar"
           />
-          <h3>Scott Tolinski</h3>
+          <h3>Roy Buddie Holley</h3>
           <a
             target="_blank"
             href="https://twitter.com/stolinski"
@@ -67,9 +65,9 @@ const Header = () => (
             @stolinski
           </a>
           <p>
-            Web Developer, Creator of{' '}
+            Web Developer, Creator of{" "}
             <a href="https://leveluptutorials.com/">Level Up Tuts</a>, Bboy,
-            Robotops Crew and{' '}
+            Robotops Crew and{" "}
             <a
               target="_blank"
               href="https://www.youtube.com/c/leveluptuts"

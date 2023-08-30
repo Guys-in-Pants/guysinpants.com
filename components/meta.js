@@ -1,13 +1,13 @@
-import Head from 'next/head';
-import PropTypes from 'prop-types';
-import slug from 'speakingurl';
+import Head from "next/head";
+import PropTypes from "prop-types";
+import slug from "speakingurl";
 
 const Meta = ({ show, staticPage }) => (
   <Head>
     {show ? (
       <>
         <title>
-          {show.title} — Syntax Podcast {show.displayNumber}
+          {show.title} — Guys in Pants Podcast {show.displayNumber}
         </title>
         <meta property="og:audio" content={show.url} />
         <meta property="og:audio:secure_url" content={show.url} />
@@ -15,19 +15,19 @@ const Meta = ({ show, staticPage }) => (
         <meta property="og:type" content="music.song" />
         <meta
           property="og:title"
-          content={`${show.title} — Syntax Podcast ${show.displayNumber}`}
+          content={`${show.title} — Guys in Pants Podcast ${show.displayNumber}`}
         />
         <meta
           property="og:url"
-          content={`https://syntax.fm/show/${show.displayNumber}/${slug(
+          content={`https://guysinpants.com/show/${show.displayNumber}/${slug(
             show.title
           )}`}
         />
       </>
     ) : (
       <title>
-        {staticPage && staticPage.title && `${staticPage.title} – `}Syntax
-        Podcast
+        {staticPage && staticPage.title && `${staticPage.title} – `}
+        Guys in Pants Podcast
       </title>
     )}
   </Head>

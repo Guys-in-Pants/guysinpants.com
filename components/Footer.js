@@ -1,25 +1,24 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const Footer = () => (
   <footer className="bottom">
     <p>
-      Want to{' '}
+      Want to{" "}
       <Link href="/sponsor">
-        <a>Sponsor the Podcast?</a>
+        Sponsor the Podcast?
       </Link>
     </p>
     <p>
       Looking for some{' '}
       <Link href="/sickpicks">
-        <a>Sick Picks?</a>
+        Sick Picks?
       </Link>
     </p>
-    <p>&copy; Wes Bos && Scott Tolinski {new Date().getFullYear()}</p>
+    <p>&copy; Aaron Meese & Roy Buddie Holley {new Date().getFullYear()}</p>
     <p>
-      Website made with React, Next.js and stylus. Hosted on{' '}
-      <a href="https://vercel.com">Vercel</a>. The source is on{' '}
+      Source on{" "}
       <a
-        href="https://github.com/wesbos/syntax"
+        href="https://github.com/meese-enterprises/guysinpants.com"
         target="_blank"
         rel="noopener noreferrer"
       >

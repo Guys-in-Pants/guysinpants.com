@@ -1,10 +1,10 @@
-import Cors from 'cors';
-import { getShows } from '../../../lib/getShows';
-import initMiddleware from '../../../lib/initMiddleware';
+import Cors from "cors";
+import { getShows } from "../../../lib/getShows";
+import initMiddleware from "../../../lib/initMiddleware";
 
 const cors = initMiddleware(
   Cors({
-    methods: ['GET', 'OPTIONS'],
+    methods: ["GET", "OPTIONS"],
   })
 );
 

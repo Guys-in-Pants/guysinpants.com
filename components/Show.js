@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import slug from 'speakingurl';
-import { FaPlay } from 'react-icons/fa';
-import Link from 'next/link';
-import Bars from './bars';
+import React from "react";
+import PropTypes from "prop-types";
+import slug from "speakingurl";
+import { FaPlay } from "react-icons/fa";
+import Link from "next/link";
+import Bars from "./bars";
 
 export default class Show extends React.Component {
   render() {
@@ -12,25 +12,24 @@ export default class Show extends React.Component {
     return (
       <div
         className={`show ${
-          currentPlaying === show.displayNumber ? 'show--playing' : ''
-        } ${currentShow === show.displayNumber ? 'show--active' : ''}
+          currentPlaying === show.displayNumber ? "show--playing" : ""
+        } ${currentShow === show.displayNumber ? "show--active" : ""}
       `}
       >
         <Link
           scroll={false}
           href="/show/[number]/[slug]"
           as={`/show/${show.displayNumber}/${slug(show.title)}`}
+          className="show__link"
         >
-          <a className="show__link">
-            <div className="show__container">
-              <p className="show__displayNumber">
-                Episode {show.displayNumber}
-              </p>
-              <span className="show__seperator"> | </span>
-              <p className="show__modifiedDate">{show.displayDate}</p>
-            </div>
-            <h3 className="show__title">{show.title}</h3>
-          </a>
+          <div className="show__container">
+            <p className="show__displayNumber">
+              Episode {show.displayNumber}
+            </p>
+            <span className="show__seperator"> | </span>
+            <p className="show__modifiedDate">{show.displayDate}</p>
+          </div>
+          <h3 className="show__title">{show.title}</h3>
         </Link>
 
         <div className="show__playcontrols">

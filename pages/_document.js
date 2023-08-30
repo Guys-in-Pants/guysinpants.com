@@ -1,6 +1,6 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
-import packageInfo from '../package.json';
-import stylesheet from '../styles/style.styl';
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import packageInfo from "../package.json";
+import stylesheet from "../styles/style.styl";
 
 class SyntaxDocument extends Document {
   render() {
@@ -15,12 +15,12 @@ class SyntaxDocument extends Document {
           <meta property="og:description" content={packageInfo.description} />
           <meta
             property="og:image"
-            content="https://syntax.fm/static/syntax-banner.png"
+            content="https://guysinpants.com/static/syntax-banner.png"
           />
-          <link rel="icon" href="https://syntax.fm/static/favicon.png" />
+          <link rel="icon" href="https://guysinpants.com/static/favicon.png" />
           <style
             // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{ __html: stylesheet.replace(/\n/g, '') }}
+            dangerouslySetInnerHTML={{ __html: stylesheet.replace(/\n/g, "") }}
           />
         </Head>
         <body>

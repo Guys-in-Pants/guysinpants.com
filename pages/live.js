@@ -1,15 +1,15 @@
-import dynamic from 'next/dynamic';
-import Page from '../components/Page';
-import Meta from '../components/meta';
+import dynamic from "next/dynamic";
+import Page from "../components/Page";
+import Meta from "../components/meta";
 
-const VideoPlayer = dynamic(() => import('../components/VideoPlayer'), {
+const VideoPlayer = dynamic(() => import("../components/VideoPlayer"), {
   ssr: false,
 });
 
 export default function Live() {
   return (
     <Page>
-      <Meta staticPage={{ title: 'Syntax Live 🎙️🔴' }} />
+      <Meta staticPage={{ title: "Guys in Pants Live 🎙️🔴" }} />
       <div className="wrapper">
         <main className="live-wrap" id="main" tabIndex="-1">
           <div className="live__callin-callout">

@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component, Fragment } from "react";
+import PropTypes from "prop-types";
 
 // TODO Fix all eslint issues
 
@@ -80,10 +80,10 @@ class VolumeBars extends Component {
               style={
                 // eslint-disable-next-line no-nested-ternary
                 item.integer > 100 && item.checked
-                  ? { background: '#f1c15d' }
+                  ? { background: "#f1c15d" }
                   : item.checked
-                  ? { background: '#03fff3' }
-                  : { background: '#e4e4e4' }
+                  ? { background: "#03fff3" }
+                  : { background: "#e4e4e4" }
               }
             >
               <span className="sr-only">{item.level}</span>

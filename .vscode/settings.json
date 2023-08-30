@@ -1,7 +1,7 @@
 {
   // These are all my auto-save configs
   "editor.formatOnSave": true,
-  // turn it off for JS and JSX, we will do this via eslint
+  // turn it off for JS and JSX, we will do this via Eslint
   "[javascript]": {
     "editor.formatOnSave": false
   },

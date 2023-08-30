@@ -1,17 +1,17 @@
-import { useRouter } from 'next/router';
-import ErrorPage from 'next/error';
-import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import slug from 'speakingurl';
-import ShowList from '../../../components/ShowList';
-import ShowNotes from '../../../components/ShowNotes';
-import Player from '../../../components/Player';
-import Meta from '../../../components/meta';
-import Page from '../../../components/Page';
-import { getShows, getShow, getShowsList } from '../../../lib/getShows';
+import { useRouter } from "next/router";
+import ErrorPage from "next/error";
+import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import slug from "speakingurl";
+import ShowList from "../../../components/ShowList";
+import ShowNotes from "../../../components/ShowNotes";
+import Player from "../../../components/Player";
+import Meta from "../../../components/meta";
+import Page from "../../../components/Page";
+import { getShows, getShow, getShowsList } from "../../../lib/getShows";
 
 export async function getStaticPaths() {
-  const shows = await getShows('all');
+  const shows = await getShows("all");
 
   return {
     fallback: false,
@@ -19,8 +19,8 @@ export async function getStaticPaths() {
       // Homepage
       {
         params: {
-          number: 'latest',
-          slug: 'latest',
+          number: "latest",
+          slug: "latest",
         },
       },
       ...shows.map((show) => ({
@@ -36,7 +36,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const shows = await getShowsList();
   const showNumber =
-    params.number === 'latest' ? shows[0].displayNumber : params.number;
+    params.number === "latest" ? shows[0].displayNumber : params.number;
   const show = await getShow(showNumber);
   const props = show.date > Date.now() ? {} : { shows, showNumber, show };
 
@@ -56,7 +56,7 @@ export default function IndexPage({ showNumber, shows, show }) {
       const { query } = router;
       if (query.number) {
         setCurrentShow(
-          query.number === 'latest' ? shows[0].displayNumber : query.number
+          query.number === "latest" ? shows[0].displayNumber : query.number
         );
       }
     },

@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const Bars = ({ isPlaying }) => (
-  <div className={`bars ${isPlaying ? '' : 'bars--paused'}`}>
+  <div className={`bars ${isPlaying ? "" : "bars--paused"}`}>
     <div className="bar" />
     <div className="bar" />
     <div className="bar" />

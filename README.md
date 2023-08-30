@@ -1,10 +1,8 @@
-# Syntax.
+# Guys in Pants
 
-A tasty treats podcast for Web Developers.
+Two funny guys who rarely wear pants.
 
-This is the site that runs [Syntax.fm](https://syntax.fm) — go there to listen to it!
-
-This site is built on React and Next.js
+This site is based on the [Syntax.fm](https://syntax.fm) website, so *huge* props to those devs for doing all the heavy lifting and making this an easy transition for us!
 
 ## Requirements
 
@@ -12,12 +10,14 @@ This site is built on React and Next.js
 
 ## Development
 
-First you `npm install`
+Install the correct version of Node with `nvm install`.
 
-Then you `npm run dev` and visit `http://localhost:6969`.
+Then install all dependencies with `pnpm install`.
+
+And the site can be spun up locally by running `pnpm run dev` and visiting `http://localhost:6969`.
 
 Then you do some work.
 
-When you are ready for prime time, you can just submit a PR to this repo and it will be deployed once it's accepted.
+When you are ready for prime time, submit a PR to this repo and it will be deployed once it's accepted.
 
-If you want to build your own version, just run `npm run build` and then I'd recommend deploying with `now`.
+If you want to build your own version, just run `npm run build` and then I'd recommend deploying with `vercel`.

@@ -1,11 +1,11 @@
-import ReactHlsPlayer from 'react-hls-player';
+import ReactHlsPlayer from "react-hls-player";
 
 export default function VideoPlayer() {
   return (
     <div
       style={{
-        marginTop: '2rem',
-        boxShadow: '1px 1px 10px rgba(0,0,0,1)',
+        marginTop: "2rem",
+        boxShadow: "1px 1px 10px rgba(0,0,0,1)",
       }}
     >
       <ReactHlsPlayer

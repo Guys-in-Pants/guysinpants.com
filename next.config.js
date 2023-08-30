@@ -1,12 +1,12 @@
-const path = require('path');
-const glob = require('glob');
+const path = require("path");
+const glob = require("glob");
 
 module.exports = {
   rewrites() {
     return [
       {
-        source: '/',
-        destination: '/show/latest/latest',
+        source: "/",
+        destination: "/show/latest/latest",
       },
     ];
   },
@@ -14,26 +14,26 @@ module.exports = {
     config.module.rules.push(
       {
         test: /\.(css|styl)/,
-        loader: 'emit-file-loader',
+        loader: "emit-file-loader",
         options: {
-          name: 'dist/[path][name].[ext]',
+          name: "dist/[path][name].[ext]",
         },
       },
       {
         test: /\.css$/,
-        use: ['babel-loader', 'raw-loader', 'postcss-loader'],
+        use: ["babel-loader", "raw-loader", "postcss-loader"],
       },
       {
         test: /\.styl$/,
         use: [
-          // 'babel-loader',
-          'raw-loader',
-          'postcss-loader',
+          // "babel-loader",
+          "raw-loader",
+          "postcss-loader",
           {
-            loader: 'stylus-loader',
+            loader: "stylus-loader",
             options: {
               stylusOptions: {
-                includePaths: ['styles', 'node_modules']
+                includePaths: ["styles", "node_modules"]
                   .map((d) => path.join(__dirname, d))
                   .map((g) => glob.sync(g))
                   .reduce((a, c) => a.concat(c), []),

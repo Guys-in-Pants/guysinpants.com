@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { FaPlay, FaPause } from 'react-icons/fa';
-import formatTime from '../lib/formatTime';
-import VolumeBars from './VolumeBars';
+import React from "react";
+import PropTypes from "prop-types";
+import { FaPlay, FaPause } from "react-icons/fa";
+import formatTime from "../lib/formatTime";
+import VolumeBars from "./VolumeBars";
 
 export default class Player extends React.Component {
   constructor(props) {
@@ -13,7 +13,7 @@ export default class Player extends React.Component {
     let lastPlaybackRate = 1;
 
     // for Server Side Rendering
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       const { show } = this.props;
       const lp = localStorage.getItem(`lastPlayed${show.number}`);
       const lastVolume = localStorage.getItem(`lastVolumeSetting`);
@@ -35,7 +35,7 @@ export default class Player extends React.Component {
       timeWasLoaded: lastPlayed !== 0,
       showTooltip: false,
       tooltipPosition: 0,
-      tooltipTime: '0:00',
+      tooltipTime: "0:00",
     };
   } // END Constructor
 
@@ -82,7 +82,7 @@ export default class Player extends React.Component {
   }
 
   timeUpdate = (e) => {
-    // console.log('Updating Time');
+    // console.log("Updating Time");
     const { show } = this.props;
     const { timeWasLoaded } = this.state;
     // Check if the user already had a curent time
@@ -121,7 +121,7 @@ export default class Player extends React.Component {
 
   togglePlay = () => {
     const { playing } = this.state;
-    const method = playing ? 'pause' : 'play';
+    const method = playing ? "pause" : "play";
     this.audio[method]();
   };
 
@@ -197,7 +197,7 @@ export default class Player extends React.Component {
         <div className="player__section player__section--left">
           <button
             onClick={this.togglePlay}
-            aria-label={playing ? 'pause' : 'play'}
+            aria-label={playing ? "pause" : "play"}
             type="button"
           >
             <p className="player__icon">{playing ? <FaPause /> : <FaPlay />}</p>
@@ -235,7 +235,7 @@ export default class Player extends React.Component {
             className="player__tooltip"
             style={{
               left: `${tooltipPosition}px`,
-              opacity: `${showTooltip ? '1' : '0'}`,
+              opacity: `${showTooltip ? "1" : "0"}`,
             }}
           >
             {tooltipTime}

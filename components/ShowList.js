@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Show from './Show';
+import React from "react";
+import PropTypes from "prop-types";
+import Show from "./Show";
 
 const ShowList = ({
   shows,

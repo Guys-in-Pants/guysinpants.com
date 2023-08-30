@@ -1,28 +1,28 @@
 /* eslint-disable react/no-danger */
-import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 
 export default function ShowNotes({ show, setCurrentPlaying }) {
   useEffect(() => {
-    document.querySelector('.showNotes').scrollTop = 0;
+    document.querySelector(".showNotes").scrollTop = 0;
   });
 
   async function handleClick(e) {
     const { target } = e;
-    if (target.matches(`a[href*='#t=']`)) {
+    if (target.matches(`a[href*="#t="]`)) {
       e.preventDefault();
       const { href } = target;
       const seconds = href
-        .split('#t=')
+        .split("#t=")
         .at(-1)
-        .split(':')
+        .split(":")
         .reverse()
         .map(Number)
         .map((num, i) => num * 60 ** i)
         .reduce((acc, num) => acc + num, 0);
       // TODO: This shouldn't use querySelector. It should use a ref. Meh its fine
       setCurrentPlaying(show.displayNumber);
-      const audio = document.querySelector('audio');
+      const audio = document.querySelector("audio");
       await audio.play();
       audio.currentTime = seconds;
     }
@@ -35,11 +35,11 @@ export default function ShowNotes({ show, setCurrentPlaying }) {
       <button
         className="button"
         onClick={() => {
-          console.log('Playing', show.displayNumber);
+          console.log("Playing", show.displayNumber);
           setCurrentPlaying(show.displayNumber);
           // Hack to play the current show. The Audio element needs to be put into context, so we can control it from the ShowNotes component.
           // https://github.com/wesbos/Syntax/issues/691
-          document.querySelector('audio').play();
+          document.querySelector("audio").play();
         }}
         type="button"
       >
@@ -50,7 +50,7 @@ export default function ShowNotes({ show, setCurrentPlaying }) {
       </a>
       <a
         className="button"
-        href={`https://github.com/wesbos/Syntax/edit/master/shows/${show.notesFile}`}
+        href={`https://github.com/meese-enterprises/guysinpants.com/edit/master/shows/${show.notesFile}`}
         target="_blank"
         rel="noopener noreferrer"
       >
