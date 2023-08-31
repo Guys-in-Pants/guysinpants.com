@@ -17,7 +17,7 @@ export default function Live() {
               Join the fun & call into the show!
             </p>
             <p>
-              Ask a potluck question, give us your sick pick, do a shameless
+              Suggest a topic, give us your sick pick, do a shameless
               plug or have us ask you a Stump'd question!
             </p>
             <a

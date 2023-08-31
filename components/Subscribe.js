@@ -11,15 +11,6 @@ function Subscribe() {
             iTunes
           </a>
         </li>
-        <li className="subscribe__link subscribe__link--overcast">
-          <a
-            target="_blank"
-            href="https://overcast.fm/itunes1253186678/syntax-tasty-web-development-treats"
-            rel="noopener noreferrer"
-          >
-            Overcast
-          </a>
-        </li>
         <li className="subscribe__link subscribe__link--google">
           <a
             target="_blank"
@@ -29,22 +20,13 @@ function Subscribe() {
             Google Podcast
           </a>
         </li>
-        <li className="subscribe__link subscribe__link--stitcher">
+        <li className="subscribe__link subscribe__link--pandora">
           <a
             target="_blank"
-            href="http://www.stitcher.com/s?fid=142440&refid=stpr"
+            href="http://www.pandora.com" // TODO
             rel="noopener noreferrer"
           >
-            Stitcher
-          </a>
-        </li>
-        <li className="subscribe__link subscribe__link--pocketcasts">
-          <a
-            target="_blank"
-            href="http://pca.st/fmx9"
-            rel="noopener noreferrer"
-          >
-            PocketCasts
+            Pandora
           </a>
         </li>
         <li className="subscribe__link subscribe__link--spotify">
