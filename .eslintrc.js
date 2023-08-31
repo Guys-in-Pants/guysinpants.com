@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["airbnb", "prettier"],
+  extends: ["airbnb", "prettier", "plugin:@next/next/recommended"],
   parser: "@babel/eslint-parser",
   parserOptions: {
     requireConfigFile: false,
