@@ -9,6 +9,7 @@
     "build": "next build",
     "start": "next start",
     "deploy": "vercel",
+    "promote": "vercel --prod",
     "alias": "vercel alias",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
