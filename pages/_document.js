@@ -5,10 +5,9 @@ import stylesheet from "../styles/style.styl";
 class SyntaxDocument extends Document {
   render() {
     return (
-      <Html lang="en" data-siiiiiiiiiiiiiiiiick="PFOXP PD125">
+      <Html lang="en">
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="code" content="FQ2QP" />
           <meta name="description" content={packageInfo.description} />
           <meta name="theme-color" content="#FABF46" />
           <meta charSet="utf-8" />
@@ -17,8 +16,11 @@ class SyntaxDocument extends Document {
             property="og:image"
             content="https://guysinpants.com/static/syntax-banner.png"
           />
-          {/*<link rel="icon" href="https://guysinpants.com/static/favicon.png" />*/}
-          <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👖</text></svg>"></link>
+          {/* <link rel="icon" href="https://guysinpants.com/static/favicon.png" /> */}
+          <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👖</text></svg>"
+          />
           <style
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: stylesheet.replace(/\n/g, "") }}

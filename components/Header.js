@@ -5,8 +5,12 @@ const Header = () => (
   <header className="header">
     <div className="header__left">
       <Link href="/" aria-label="Guys in Pants">
-        {/*<img className="header__logo" src="/static/logo.png" alt="Guys in Pants logo" />*/}
-        <img className="header__logo" src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.95em' x='-.05em' font-size='75'>👖</text></svg>" alt="Guys in Pants logo" />
+        {/* <img className="header__logo" src="/static/logo.png" alt="Guys in Pants logo" /> */}
+        <img
+          className="header__logo"
+          src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.95em' x='-.05em' font-size='75'>👖</text></svg>"
+          alt="Guys in Pants logo"
+        />
       </Link>
     </div>
     <div className="header__right">
@@ -38,7 +42,7 @@ const Header = () => (
             @ajmeese7
           </a>
           <p>
-            Paperwork pusher, former cyber guy. Creator of {" "}
+            Paperwork pusher, former cyber guy. Creator of{" "}
             <a
               target="_blank"
               href="https://aaronmeese.com/"

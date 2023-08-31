@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Meta from '../components/meta';
-import Page from '../components/Page';
-import { getAllShowSickPicks } from '../lib/getShows';
+import React from "react";
+import PropTypes from "prop-types";
+import Meta from "../components/meta";
+import Page from "../components/Page";
+import { getAllShowSickPicks } from "../lib/getShows";
 
 export async function getStaticProps() {
   const sickPicks = await getAllShowSickPicks();
@@ -21,7 +21,7 @@ export default class SickPicksPage extends React.Component {
 
     return (
       <Page>
-        <Meta staticPage={{ title: 'Sick Picks' }} />
+        <Meta staticPage={{ title: "Sick Picks" }} />
         <div className="wrapper wrapper--text">
           {sickPicks.map((sickPick) => (
             <div

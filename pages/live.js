@@ -17,8 +17,8 @@ export default function Live() {
               Join the fun & call into the show!
             </p>
             <p>
-              Suggest a topic, give us your sick pick, do a shameless
-              plug or have us ask you a Stump'd question!
+              Suggest a topic, give us your sick pick, do a shameless plug or
+              have us ask you a Stump'd question!
             </p>
             <a
               href="https://riverside.fm/studio/syntax-live"
