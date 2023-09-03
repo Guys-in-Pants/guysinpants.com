@@ -8,8 +8,8 @@ class SyntaxDocument extends Document {
       <Html lang="en">
         <Head>
           <meta name="description" content={packageInfo.description} />
-          <meta name="theme-color" content="#FABF46" />
-          <meta charSet="utf-8" />
+          <meta name="theme-color" content="#5c94de" />
+          <meta property="og:title" content="Guys in Pants" />
           <meta property="og:description" content={packageInfo.description} />
           <meta
             property="og:image"

@@ -6,6 +6,7 @@ const Meta = ({ show, staticPage }) => {
   const title = show
     ? `${show.title} — Guys in Pants Podcast ${show.displayNumber}`
     : staticPage.title;
+
   return (
     <Head>
       {show ? (
