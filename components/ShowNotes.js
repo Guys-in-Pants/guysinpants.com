@@ -60,7 +60,7 @@ export default function ShowNotes({ show, setCurrentPlaying }) {
       <div
         onClick={handleClick}
         dangerouslySetInnerHTML={{ __html: show.html }}
-        />
+      />
       {/* eslint-enable */}
     </div>
   );

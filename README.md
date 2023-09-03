@@ -2,7 +2,7 @@
 
 Two funny guys who rarely wear pants.
 
-This site is based on the [Syntax.fm](https://syntax.fm) website, so *huge* props to those devs for doing all the heavy lifting and making this an easy transition for us!
+This site is based on the [Syntax.fm](https://syntax.fm) website, so _huge_ props to those devs for doing all the heavy lifting and making this an easy transition for us!
 
 ## Requirements
 

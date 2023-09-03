@@ -19,10 +19,10 @@ export default class Player extends React.Component {
       const lastVolume = localStorage.getItem(`lastVolumeSetting`);
       const lastPlayback = localStorage.getItem(`lastPlaybackSetting`);
 
-      if (lp) lastPlayed = JSON.parse(lp).lastPlayed; //eslint-disable-line
-      if (lastVolume) lastVolumePref = JSON.parse(lastVolume).lastVolumePref; //eslint-disable-line
+      if (lp) lastPlayed = JSON.parse(lp).lastPlayed; // eslint-disable-line
+      if (lastVolume) lastVolumePref = JSON.parse(lastVolume).lastVolumePref; // eslint-disable-line
       if (lastPlayback)
-        lastPlaybackRate = JSON.parse(lastPlayback).lastPlaybackRate; //eslint-disable-line
+        lastPlaybackRate = JSON.parse(lastPlayback).lastPlaybackRate; // eslint-disable-line
     }
 
     this.state = {
@@ -39,11 +39,13 @@ export default class Player extends React.Component {
     };
   } // END Constructor
 
-  componentWillUpdate(nextProps, nextState) { //eslint-disable-line
+  UNSAFE_componentWillUpdate(nextProps, nextState) {
+    // eslint-disable-line
     this.audio.playbackRate = nextState.playbackRate;
   }
 
-  componentDidUpdate(prevProps, prevState) { //eslint-disable-line
+  componentDidUpdate(prevProps, _prevState) {
+    // eslint-disable-line
     const { show } = this.props;
     const { currentTime, currentVolume, playbackRate } = this.state;
     if (show.number !== prevProps.show.number) {
@@ -166,7 +168,7 @@ export default class Player extends React.Component {
     const playbackRateMax = 2.5;
     const playbackRateMin = 0.75;
 
-    let playbackRate = this.state.playbackRate + change; //eslint-disable-line
+    let playbackRate = this.state.playbackRate + change; // eslint-disable-line
 
     if (playbackRate > playbackRateMax) {
       playbackRate = playbackRateMin;
@@ -219,7 +221,7 @@ export default class Player extends React.Component {
             onMouseLeave={() => {
               this.setState({ showTooltip: false });
             }}
-            ref={x => (this.progress = x)}
+            ref={(x) => (this.progress = x)}
           >
             {/* eslint-enable */}
 
@@ -262,7 +264,7 @@ export default class Player extends React.Component {
         {/* eslint-disable */}
 
         <audio
-          ref={audio => (this.audio = audio)}
+          ref={(audio) => (this.audio = audio)}
           onPlay={this.playPause}
           onPause={this.playPause}
           onTimeUpdate={this.timeUpdate}

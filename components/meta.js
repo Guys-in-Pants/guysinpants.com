@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 import slug from "speakingurl";
 
 const Meta = ({ show, staticPage }) => {
-  const title = show ? `${show.title} — Guys in Pants Podcast ${show.displayNumber}` : staticPage.title;
+  const title = show
+    ? `${show.title} — Guys in Pants Podcast ${show.displayNumber}`
+    : staticPage.title;
   return (
     <Head>
       {show ? (
@@ -31,7 +33,7 @@ const Meta = ({ show, staticPage }) => {
         </title>
       )}
     </Head>
-  )
+  );
 };
 
 const requiredPropsCheck = (props, propName, componentName) => {
