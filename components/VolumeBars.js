@@ -80,10 +80,10 @@ class VolumeBars extends Component {
               style={
                 // eslint-disable-next-line no-nested-ternary
                 item.integer > 100 && item.checked
-                  ? { background: "#f1c15d" } // orange-ish
+                  ? { background: "#ef10a3" } // max volume option; dark pink
                   : item.checked
-                  ? { background: "#03fff3" } // neon blue
-                  : { background: "#e4e4e4" } // grey
+                  ? { background: "#10ef5c" } // active volume option; light green
+                  : { background: "#e4e4e4" } // unused volume option; grey
               }
             >
               <span className="sr-only">{item.level}</span>
