@@ -23,7 +23,6 @@
   position -webkit-sticky
   top: -1px
   z-index 2
-  // flex-wrap wrap
   &__section
     order 2
     &--left
@@ -36,7 +35,7 @@
     &--middle
       position relative
       flex 1 1 auto
-      border-right 1px solid rgba(0,0,0,0.6)
+      border-right 1px solid rgba(0, 0, 0, 0.6)
       display flex
       flex-direction column
       @media (max-width: 650px)
@@ -80,7 +79,7 @@
     border 0
     color white
     padding 1rem
-    border-right 1px solid rgba(0,0,0,0.6)
+    border-right 1px solid rgba(0, 0, 0, 0.6)
     outline-color themecolor
   &__speeddisplay
   &__speeddisplay
@@ -113,8 +112,8 @@
     padding 1rem
     flex-wrap wrap
     flex 1 0 auto
-    &:focus-within
-      outline: themecolor auto 5px;
+    /*&:focus-within
+      outline: themecolor auto 5px;*/
     &:hover
       label
         border-top 1px solid themecolor
@@ -144,7 +143,7 @@
   overflow hidden
   &__time
     background green
-    border-right 1px solid rgba(0,0,0,0.1)
+    border-right 1px solid rgba(0, 0, 0, 0.1)
     min-width 20px
     height 100%
     transition width 0.1s
