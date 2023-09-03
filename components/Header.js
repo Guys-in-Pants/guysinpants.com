@@ -8,7 +8,7 @@ const Header = () => (
         {/* <img className="header__logo" src="/static/logo.png" alt="Guys in Pants logo" /> */}
         <img
           className="header__logo"
-          src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.95em' x='-.05em' font-size='75'>👖</text></svg>"
+          src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.95em' x='-.025em' font-size='75'>👖</text></svg>"
           alt="Guys in Pants logo"
         />
       </Link>
@@ -66,23 +66,14 @@ const Header = () => (
           <h3>Roy Buddie Holley</h3>
           <a
             target="_blank"
-            href="https://twitter.com/rbuddie"
+            href="https://twitter.com/Buddiethekid"
             className="person__social person__social--twitter"
             rel="noopener noreferrer"
           >
-            @rbuddie
+            @Buddiethekid
           </a>
           <p>
-            ✨SENIOR✨ paperwork pusher. Creator of{" "}
-            <a href="https://leveluptutorials.com/">Level Up Tuts</a>, Bboy,
-            Robotops Crew and{" "}
-            <a
-              target="_blank"
-              href="https://www.youtube.com/c/leveluptuts"
-              rel="noopener noreferrer"
-            >
-              Youtuber
-            </a>
+            ✨<i>Senior</i> ✨ paperwork pusher.
           </p>
         </div>
       </div>
