@@ -2,24 +2,22 @@ import Head from "next/head";
 import PropTypes from "prop-types";
 import slug from "speakingurl";
 
-const Meta = ({ show, staticPage }) => {
-  const title = show
-    ? `${show.title} — Guys in Pants Podcast ${show.displayNumber}`
-    : staticPage.title;
+const Meta = ({ show, staticPage, latest }) => {
+  const title = latest ?
+    "Guys in Pants Podcast" : show ?
+      `${show.title} — Guys in Pants Podcast ${show.displayNumber}`
+      : staticPage.title;
 
   return (
     <Head>
       {show ? (
         <>
           <title>{title}</title>
+          <meta property="og:title" content={title} />
           <meta property="og:audio" content={show.url} />
           <meta property="og:audio:secure_url" content={show.url} />
           <meta property="og:audio:type" content="audio/mp3" />
           <meta property="og:type" content="music.song" />
-          <meta
-            property="og:title"
-            content={`${show.title} — Guys in Pants Podcast ${show.displayNumber}`}
-          />
           <meta
             property="og:url"
             content={`https://guysinpants.com/show/${show.displayNumber}/${slug(

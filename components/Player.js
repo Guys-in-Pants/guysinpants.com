@@ -84,7 +84,6 @@ export default class Player extends React.Component {
   }
 
   timeUpdate = (e) => {
-    // console.log("Updating Time");
     const { show } = this.props;
     const { timeWasLoaded } = this.state;
     // Check if the user already had a curent time

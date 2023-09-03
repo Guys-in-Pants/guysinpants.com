@@ -9,7 +9,7 @@ class SyntaxDocument extends Document {
         <Head>
           <meta name="description" content={packageInfo.description} />
           <meta name="theme-color" content="#5c94de" />
-          <meta property="og:title" content="Guys in Pants" />
+          <meta property="og:site_name" content="Guys in Pants Podcast" />
           <meta property="og:description" content={packageInfo.description} />
           <meta
             property="og:image"

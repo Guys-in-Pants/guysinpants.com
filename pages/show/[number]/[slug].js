@@ -35,8 +35,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const shows = await getShowsList();
-  const showNumber =
-    params.number === "latest" ? shows[0].displayNumber : params.number;
+  const latest = params.number === "latest";
+  const showNumber = latest ? shows[0].displayNumber : params.number;
   const show = await getShow(showNumber);
   const props = show.date > Date.now() ? {} : { shows, showNumber, show };
 
@@ -51,16 +51,16 @@ export default function IndexPage({ showNumber, shows, show }) {
   const [currentShow, setCurrentShow] = useState(showNumber);
   const [currentPlaying, setCurrentPlaying] = useState(showNumber);
   const [isPlaying, setIsPlaying] = useState(false);
+  const latest = router.query.number === "latest";
+
   useEffect(
     () => {
       const { query } = router;
       if (query.number) {
-        setCurrentShow(
-          query.number === "latest" ? shows[0].displayNumber : query.number
-        );
+        setCurrentShow(latest ? shows[0].displayNumber : query.number);
       }
     },
-    // watch the router for changes, and when it does, the above code will change
+    // Watch the router for changes, and when it does, the above code will change
     [router, shows]
   );
 
@@ -75,7 +75,7 @@ export default function IndexPage({ showNumber, shows, show }) {
   );
   return (
     <Page>
-      <Meta show={show} />
+      <Meta show={show} latest={latest} />
       <div className="wrapper">
         <main className="show-wrap" id="main" tabIndex="-1">
           <Player show={current} onPlayPause={(a) => setIsPlaying(!a.paused)} />
