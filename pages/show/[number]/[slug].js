@@ -61,7 +61,7 @@ export default function IndexPage({ showNumber, shows, show }) {
       }
     },
     // Watch the router for changes, and when it does, the above code will change
-    [router, shows]
+    [router, shows, latest]
   );
 
   // When the page changes...

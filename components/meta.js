@@ -3,10 +3,14 @@ import PropTypes from "prop-types";
 import slug from "speakingurl";
 
 const Meta = ({ show, staticPage, latest }) => {
-  const title = latest ?
-    "Guys in Pants Podcast" : show ?
-      `${show.title} — Guys in Pants Podcast ${show.displayNumber}`
-      : staticPage.title;
+  let title = "";
+  if (latest) {
+    title = "Guys in Pants Podcast";
+  } else if (show) {
+    title = `${show.title} — Guys in Pants Podcast ${show.displayNumber}`;
+  } else {
+    title = staticPage.title;
+  }
 
   return (
     <Head>
@@ -61,6 +65,7 @@ Meta.propTypes = {
   staticPage: PropTypes.shape({
     title: PropTypes.string.isRequired,
   }),
+  latest: PropTypes.bool,
 };
 
 export default Meta;
