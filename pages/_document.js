@@ -13,7 +13,7 @@ class SyntaxDocument extends Document {
           <meta property="og:description" content={packageInfo.description} />
           <meta
             property="og:image"
-            content="https://guysinpants.com/static/syntax-banner.png" // TODO: Replace this image
+            content="https://guysinpants.com/static/social-banner.jpg"
           />
           {/* <link rel="icon" href="https://guysinpants.com/static/favicon.png" /> */}
           <link
