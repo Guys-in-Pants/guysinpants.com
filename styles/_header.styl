@@ -15,12 +15,26 @@
     justify-content center
     @media (max-width: 800px)
       width 100%
+      .tagline
+        display none
   &__logo
     margin-left -3rem
     max-width 300px
     text-align center
     @media (max-width: 800px)
-      margin-left -2rem
+      margin-left 0rem
+      max-width 30%
+      float left
+  &__tagline
+    max-width 70%
+    margin 0
+    float right
+    display none
+    position relative
+    top 50%
+    transform translate(0, -50%)
+    @media (max-width: 800px)
+      display block
 .title
   position relative
   &__suggestion-btn

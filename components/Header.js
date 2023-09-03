@@ -12,6 +12,9 @@ const Header = () => (
           alt="Guys in Pants logo"
         />
       </Link>
+      <h2 className="header__tagline">
+        Two Funny Guys Who Rarely Wear Pants.
+      </h2>
     </div>
     <div className="header__right">
       <div className="title">
