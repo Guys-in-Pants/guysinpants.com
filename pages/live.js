@@ -27,7 +27,7 @@ export default function Live() {
               Join the Riverside to get on! Will be streaming here and on
               YouTube as well.
             </a>
-            <p>TODAY, 12PM ET </p>
+            <p>TODAY, 1200 EST </p>
           </div>
           <VideoPlayer />
         </main>
