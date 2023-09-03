@@ -21,7 +21,8 @@ export default function Live() {
               have us ask you a Stump'd question!
             </p>
             <a
-              href="https://riverside.fm/studio/syntax-live"
+              // TODO: Try to get the slug changed to just *guys-in-pants*
+              href="https://riverside.fm/studio/guys-in-pantss-studio"
               className="live__callin-btn"
             >
               Join the Riverside to get on! Will be streaming here and on

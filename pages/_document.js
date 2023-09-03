@@ -14,7 +14,7 @@ class SyntaxDocument extends Document {
           <meta property="og:description" content={packageInfo.description} />
           <meta
             property="og:image"
-            content="https://guysinpants.com/static/syntax-banner.png"
+            content="https://guysinpants.com/static/syntax-banner.png" // TODO: Replace this image
           />
           {/* <link rel="icon" href="https://guysinpants.com/static/favicon.png" /> */}
           <link

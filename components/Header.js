@@ -51,7 +51,7 @@ const Header = () => (
             >
               MeeseOS
             </a>
-            . Alcohol enthusiast.
+            . Zealous alcohol enthusiast.
           </p>
         </div>
 
