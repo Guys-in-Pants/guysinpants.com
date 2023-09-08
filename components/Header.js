@@ -28,11 +28,7 @@ const Header = () => (
       </div>
       <div className="people">
         <div className="person">
-          <img
-            src="static/pfps/one.jpg"
-            alt="Person One"
-            className="avatar"
-          />
+          <img src="static/pfps/one.jpg" alt="Person One" className="avatar" />
           <h3>Person One</h3>
           <a
             target="_blank"
@@ -42,17 +38,11 @@ const Header = () => (
           >
             @GuysInPants_One
           </a>
-          <p>
-            Paperwork pusher, former cyber guy. Zealous alcohol enthusiast.
-          </p>
+          <p>Paperwork pusher, former cyber guy. Zealous alcohol enthusiast.</p>
         </div>
 
         <div className="person">
-          <img
-            src="static/pfps/two.jpg"
-            alt="Person Two"
-            className="avatar"
-          />
+          <img src="static/pfps/two.jpg" alt="Person Two" className="avatar" />
           <h3>Person Two</h3>
           <a
             target="_blank"

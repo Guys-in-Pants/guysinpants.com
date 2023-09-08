@@ -12,6 +12,7 @@
     "promote": "vercel --prod",
     "alias": "vercel alias",
     "test": "npm run lint && npm run prettier",
+    "fix": "npm run lint:fix && npm run prettier:fix",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --check .",
