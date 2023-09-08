@@ -29,46 +29,38 @@ const Header = () => (
       <div className="people">
         <div className="person">
           <img
-            src="https://avatars.githubusercontent.com/ajmeese7?size=200"
-            alt="Aaron Meese"
+            src="static/pfps/one.jpg"
+            alt="Person One"
             className="avatar"
           />
-          <h3>Aaron Meese</h3>
+          <h3>Person One</h3>
           <a
             target="_blank"
-            href="https://twitter.com/ajmeese7"
+            href="https://twitter.com/GuysInPants_One"
             className="person__social person__social--twitter"
             rel="noopener noreferrer"
           >
-            @ajmeese7
+            @GuysInPants_One
           </a>
           <p>
-            Paperwork pusher, former cyber guy. Creator of{" "}
-            <a
-              target="_blank"
-              href="https://aaronmeese.com/"
-              rel="noopener noreferrer"
-            >
-              MeeseOS
-            </a>
-            . Zealous alcohol enthusiast.
+            Paperwork pusher, former cyber guy. Zealous alcohol enthusiast.
           </p>
         </div>
 
         <div className="person">
           <img
-            src="https://scontent-iad3-2.xx.fbcdn.net/v/t1.18169-9/1460190_599764553418359_1429444675_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Grx56P2OwmcAX__0QTR&_nc_ht=scontent-iad3-2.xx&oh=00_AfBdTid_R3ru-itOqwWuY7iEd8QrjhxYyRq79_hNgQAXhw&oe=651725A9"
-            alt="Roy Buddie Holley"
+            src="static/pfps/two.jpg"
+            alt="Person Two"
             className="avatar"
           />
-          <h3>Roy Buddie Holley</h3>
+          <h3>Person Two</h3>
           <a
             target="_blank"
-            href="https://twitter.com/Buddiethekid"
+            href="https://twitter.com/GuysInPants_Two"
             className="person__social person__social--twitter"
             rel="noopener noreferrer"
           >
-            @Buddiethekid
+            @GuysInPants_Two
           </a>
           <p>
             ✨<i>Senior</i> ✨ paperwork pusher.

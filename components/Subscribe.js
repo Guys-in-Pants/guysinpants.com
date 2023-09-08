@@ -57,6 +57,15 @@ function Subscribe() {
           </a>
         </li>
         */}
+        <li className="subscribe__link subscribe__link--twitter">
+          <a
+            target="_blank"
+            href="https://twitter.com/GuysInPants"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </a>
+        </li>
       </ul>
     </div>
   );
