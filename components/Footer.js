@@ -10,7 +10,9 @@ const Footer = () => (
       Looking for some <Link href="/sickpicks">Sick Picks?</Link>
     </p>
     */}
-    <p>&copy; Aaron Meese & Roy Buddie Holley, {new Date().getFullYear()}</p>
+    <p>
+      &copy; Guys in Pants, {new Date().getFullYear()}. All Rights Reserved.
+    </p>
   </footer>
 );
 
